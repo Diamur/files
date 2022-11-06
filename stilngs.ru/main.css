@@ -1,0 +1,549 @@
+/* Вставка почты */
+
+a#mymail6 {
+    margin-left: 5px;
+}
+
+span#mymail4 {
+    color: #008cd2;
+}
+
+
+div#mymail3 {
+    padding: 4px;
+    border: 1px dashed #ccc;
+    background: #fafafa;
+    user-select: all;
+    margin-top: 6px;
+}
+
+
+div#mymail1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div#mymailheader {
+    margin-left: 20px;
+    margin-top: 10px;
+	margin-right: 111px;
+}
+
+span#mymailheader2 {
+    margin-left: 7px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2d2d2d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div#copy_message {
+    position: fixed;
+    left: 70%;
+    top: 30%;
+    padding: 11px;
+    background: #727272;
+    border-radius: 0px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 9;
+}
+
+div#mymailtext {
+    color: #1d1d1d;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+div#mymail3 {
+    padding: 18px;
+    border: 1px dashed #ccc;
+    background: #fafafa;
+    user-select: all;
+    margin-top: 6px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+div#mymail {
+    margin-top: 10px;
+}
+
+div#mymail2 {
+    margin-top: 10px;
+}
+
+
+img#imgmail {
+    width: 22px;
+}
+
+div#mymailheader0 {
+    margin-bottom: 9px;
+}
+
+img#mymail4 {
+    width: 28px;
+    margin-right: 10px;
+}
+
+/* Общие настройки */
+
+
+.right-icons.pull-right.top-block-item.logo_and_menu-row {
+    display: flex;
+    align-items: center;
+}
+
+i#mymailheader1 {
+    color: grey;
+}
+
+div#mymailheader {
+    font-size: 17px;
+}
+
+
+
+.rating {
+    display: none;
+}
+
+#elementProperties{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/*margin-top: 24px;*/
+	padding: 0 24px;
+	overflow: auto;
+}
+
+#elementProperties .heading{
+	border-top: 1px solid #efefef;
+	/* font-family: 'robotobold'; */
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 36px 0px 24px 0;
+	font-weight: 800;
+	font-size: 20px;
+	display: block;
+}
+
+.elementProperties a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: #000000;
+}
+
+#elementProperties .stats {
+	/*min-width: 600px;*/
+	width: 100%;
+	padding: 12px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+#elementProperties .stats a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: #000000;
+}
+
+#elementProperties .stats a:active{
+	position: relative;
+	top: 1px;
+}
+
+#elementProperties .stats td{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#elementProperties .stats .question {
+	background: url("/bitrix/templates/dresscode/components/dresscode/catalog.item/detail_custom_opt_price/images/questions.png") 0 0 transparent;
+	-webkit-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 4px;
+	height: 19px;
+	width: 19px;
+}
+
+#elementProperties .stats .question:hover {
+	background: url("/bitrix/templates/dresscode/components/dresscode/catalog.item/detail_custom_opt_price/images/questions.png") -19px 0 transparent;
+}
+
+#elementProperties .stats .question:active {
+	background: url("/bitrix/templates/dresscode/components/dresscode/catalog.item/detail_custom_opt_price/images/questions.png") -38px 0 transparent;
+}
+
+#elementProperties .stats tr {
+	border: 1px solid #e4e4e4;
+}
+
+#elementProperties .stats .gray td {
+	background-color: #F6F6F6;
+}
+
+#elementProperties .stats tr:hover td {
+	background: #eee;
+}
+
+#elementProperties .stats .cap,
+#elementProperties .stats .cap:hover td {
+	background-color: #fff !important;
+	border: 0 !important;
+}
+
+#elementProperties .stats .cap td {
+	font-size: 18px;
+	color: #000000;
+	padding: 12px 0;
+}
+
+#elementProperties .stats td {
+	padding: 6px 0px;
+}
+
+#elementProperties .stats .name {
+	text-overflow: ellipsis;
+	/*white-space: nowrap;*/
+	overflow: hidden;
+	width: 40%;
+}
+
+#elementProperties .stats .name span {
+	padding: 0px 12px;
+}
+
+#elementProperties .stats .analog {
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	font-size: 13px;
+	text-decoration: none;
+	color: #9d9d9d;
+	border-bottom: 1px solid #d0d0d0;
+	padding-bottom: 1px;
+}
+
+#elementProperties .stats .analog:hover {
+	color: #000000;
+	border-bottom-color: #000000;
+}
+
+#elementProperties .stats .analog:active {
+	position: relative;
+	top: 1px;
+}
+
+#elementProperties .stats .right {
+	text-align: right;
+	padding-right: 10%;
+}
+
+/* ------------------------------------------------------ */
+/* ----                  Desctop                      --- */ 
+/* ------------------------------------------------------ */
+ 
+ @media (min-width: 920px) {
+	 
+	 /* Самовывоз сегодня - бесплатно Доставка завтра - 390 ? */
+	 
+	 #content > div.wrapper_inner > div > div > div > div > div > div > div > div.left_block.sticky-sidebar-custom.product-side.main_item_wrapper.product-main.js-offers-calc.show_un_props > div > div:nth-child(5) {
+    display: none;
+}
+	 
+	 /* Убрать ХОЧУ В ПОДАРОК */
+	 
+	 #content > div.wrapper_inner > div > div > div > div > div > div > div > div.left_block.sticky-sidebar-custom.product-side.main_item_wrapper.product-main.js-offers-calc.show_un_props > div > div.text-form.muted.ncolor {
+    display: none;
+}
+	 
+/* Убрать НАШЛИ ДЕШЕВЛЕ	  */
+	 
+	 #content > div.wrapper_inner > div > div > div > div > div > div > div > div.left_block.sticky-sidebar-custom.product-side.main_item_wrapper.product-main.js-offers-calc.show_un_props > div > div.cost.prices.detail.prices_block > div.price_matrix_wrapper {
+    display: none;
+}
+	 
+	 
+	 #content > div.wrapper_inner > div > div > div > div > div > div > div > div.left_block.sticky-sidebar-custom.product-side.main_item_wrapper.product-main.js-offers-calc.show_un_props > div > div.quantity_block_wrapper > div.cheaper_form.muted777.font_xs {
+    display: none;
+}
+	 
+ /* убираем корзину */
+ #header > div.header-wrapper.fix-logo.header-v28 > div > div > div > div.row > div > div > div > div.subbottom > div.right-icons.pull-right.top-block-item.logo_and_menu-row > div:nth-child(1) {
+    display: none;
+}
+
+
+#headerfixed > div > div > a.basket-link.basket.inner-table-block.big {
+    display: none;
+}
+
+ /* убирать кабинет */
+ #headerfixed > div > div > div.inner-table-block.nopadding.small-block {
+    display: none;
+}
+ 
+#header > div.header-wrapper.fix-logo.header-v28 > div > div > div > div.row > div > div > div > div.subtop.lines-block > div > div > div > div.right-icons.top-block-item.top-block-item.showed {
+    display: none;
+}
+
+ /* Убрать фильтр */
+ 
+#content > div.wrapper_inner > div > div > div > div > div.top-content-block > div > div:nth-child(2) {
+    display: none;
+} 
+ 
+ /* Повыше список товаров к шапке  */
+ 
+ .page-top>div:last-of-type {
+    padding: 15px 0 10px;
+}
+
+/* Убрать сортировку */
+
+#right_block_ajax > div.filter-panel-wrapper.filter_exists {
+    display: none;
+}
+
+/* Убрать соцсети */
+#content > div.top-block-wrapper > section > div.topic > div > div.share.hover-block.top {
+    display: none;
+}
+
+/* Расстояние между разделами и товарами */
+.top-content-block>div {
+    padding-bottom: 9px;
+}
+
+#main > div.wrapper1.header_bgcolored.long_header2.wides_menu.smalls.big_header.sticky_menu.catalog_page.basket_normal.basket_fill_WHITE.side_LEFT.block_side_NORMAL.catalog_icons_N.banner_auto.with_fast_view.mheader-v1.header-v28.header-font-lower_N.regions_N.title_position_LEFT.fill_.footer-v3.front-vindex1.mfixed_Y.mfixed_view_always.title-v3.lazy_Y.with_phones.dark-hover-overlay.normal-catalog-img.landing-normal.big-banners-mobile-slider.bottom-icons-panel-N.compact-breadcrumbs-N.catalog-delayed-btn-N > div.product-item-detail-tabs-container-fixed.fixed {
+    display: none;
+}
+
+.landings-list__info.hidden-xs {
+    display: none!important;
+}
+
+.cheaper_form.muted777.font_xs {
+    display: none;
+}
+
+.cost.prices.detail.prices_block {
+    display: none;
+}
+
+.text-form.muted.ncolor {
+    display: none;
+}
+
+.inner-wrapper-sticky .text-form {
+    display: none;
+}
+
+span.btn-lg.to-order.btn.btn-default.animate-load.has-ripple {
+    font-size: 18px;
+}
+ 
+}
+
+/* ------------------------------------------------------ */
+/* ----                  MOBILE                       --- */ 
+/* ------------------------------------------------------ */
+  @media (max-width: 920px) {
+	  
+	  img#hmobmile {
+    width: 30px;
+    margin-bottom: 7px;
+}
+
+	  
+	  /* Самовывоз */
+	  
+	  #bx_117848907_755 > div.right_info > div > div > div.adaptive-block > div:nth-child(6) {
+    display: none;
+}
+
+/* Хочу в подарок	   */
+
+#bx_117848907_755 > div.right_info > div > div > div.adaptive-block > div.text-form.muted.ncolor {
+    display: none;
+}
+
+
+/* Нашли дешевле	   */
+	  
+	 #bx_117848907_755 > div.right_info > div > div > div.adaptive-block > div.quantity_block_wrapper > div.cheaper_form.muted777.font_xs {
+    display: none;
+} 
+	  
+	  #mobileheader > div.mobileheader-v1 > div.right-icons.pull-right > div:nth-child(1) {
+    display: none;
+}
+
+ /* убирать кабинет */
+ /* убирать кабинет */
+
+#mobileheader > div.mobileheader-v1 > div.right-icons.pull-right > div:nth-child(2) {
+    display: none;
+}
+
+
+
+/* Убрать теги */
+
+#content > div.wrapper_inner > div > div > div > div > div.top-content-block > div.landings-list.landings_list.with-normal {
+    display: none;
+}
+
+
+/* Убрать фильтр */
+#right_block_ajax > div.filter-panel-wrapper.filter_exists {
+    display: none;
+}
+
+/* Убрать соцсети */
+
+
+
+#content > div.top-block-wrapper > section > div.topic > div > div.share.hover-block.top {
+    display: none;
+}
+
+.inner_rating {
+    display: none;
+}
+
+/* Вставка почты */
+
+div#mobmile {
+    margin-bottom: 50px;
+}
+
+div#mobmile6 {
+    /* left: 47px; */
+    /* margin-left: -15px; */
+}
+
+div#mobmile {
+    background: #e9e9e9;
+}
+
+div#mobmile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+div#mobmile2 {
+    /* padding: 9px; */
+    width: 100%;
+    background: #f9f9f9;
+}
+
+div#mobmile3 {}
+
+div#mobmile3 {
+    /* width: 100%; */
+    /* display: inline-block; */
+}
+
+div#mobmile5 {
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+img#mobmile7 {
+    width: 33px;
+    margin-right: 7px;
+}
+
+div#mobmile4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    height: 45px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+span#mymail6 {
+    /* margin-left: 25%; */
+}
+
+div#mobmile {}
+
+div#mobmile {
+    position: fixed!important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+span.btn-lg.to-order.btn.btn-default.animate-load.has-ripple {
+    font-size: 18px;
+    /* padding-top: 52px; */
+}
+
+div#bx_117848907_753_basket_actions {}
+
+.button_block.wide {
+    height: 48px;
+}
+
+.price_txt.muted777.font_sxs.muted.ncolor {
+    display: none;
+}
+
+.price_txt.muted777.font_sxs {
+    display: none;
+}
+
+.cheaper_form.muted777.font_xs {
+    display: none;
+}
+
+span.btn-lg.to-order.btn.btn-default.animate-load {
+    font-size: 18px;
+}
+
+
+.font_xs {
+    font-size: .9em;
+    line-height: 1.692em;
+}
+
+span.breadcrumbs__separator {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.breadcrumbs.swipeignore {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+}
+/* Конец мобильн8ых стилей */
+
+h1 {
+    font-size: 1.5em;
+}
