@@ -1,4 +1,4 @@
-/* Вставка почты */
+/* Р’СЃС‚Р°РІРєР° РїРѕС‡С‚С‹ */
 
 a#mymail6 {
     margin-left: 5px;
@@ -92,7 +92,7 @@ img#mymail4 {
     margin-right: 10px;
 }
 
-/* Общие настройки */
+/* РћР±С‰РёРµ РЅР°СЃС‚СЂРѕР№РєРё */
 
 
 .right-icons.pull-right.top-block-item.logo_and_menu-row {
@@ -258,19 +258,19 @@ div#mymailheader {
  
  @media (min-width: 920px) {
 	 
-	 /* Самовывоз сегодня - бесплатно Доставка завтра - 390 ? */
+	 /* РЎР°РјРѕРІС‹РІРѕР· СЃРµРіРѕРґРЅСЏ - Р±РµСЃРїР»Р°С‚РЅРѕ Р”РѕСЃС‚Р°РІРєР° Р·Р°РІС‚СЂР° - 390 ? */
 	 
 	 #content > div.wrapper_inner > div > div > div > div > div > div > div > div.left_block.sticky-sidebar-custom.product-side.main_item_wrapper.product-main.js-offers-calc.show_un_props > div > div:nth-child(5) {
     display: none;
 }
 	 
-	 /* Убрать ХОЧУ В ПОДАРОК */
+	 /* РЈР±СЂР°С‚СЊ РҐРћР§РЈ Р’ РџРћР”РђР РћРљ */
 	 
 	 #content > div.wrapper_inner > div > div > div > div > div > div > div > div.left_block.sticky-sidebar-custom.product-side.main_item_wrapper.product-main.js-offers-calc.show_un_props > div > div.text-form.muted.ncolor {
     display: none;
 }
 	 
-/* Убрать НАШЛИ ДЕШЕВЛЕ	  */
+/* РЈР±СЂР°С‚СЊ РќРђРЁР›Р Р”Р•РЁР•Р’Р›Р•	  */
 	 
 	 #content > div.wrapper_inner > div > div > div > div > div > div > div > div.left_block.sticky-sidebar-custom.product-side.main_item_wrapper.product-main.js-offers-calc.show_un_props > div > div.cost.prices.detail.prices_block > div.price_matrix_wrapper {
     display: none;
@@ -281,7 +281,7 @@ div#mymailheader {
     display: none;
 }
 	 
- /* убираем корзину */
+ /* СѓР±РёСЂР°РµРј РєРѕСЂР·РёРЅСѓ */
  #header > div.header-wrapper.fix-logo.header-v28 > div > div > div > div.row > div > div > div > div.subbottom > div.right-icons.pull-right.top-block-item.logo_and_menu-row > div:nth-child(1) {
     display: none;
 }
@@ -291,7 +291,7 @@ div#mymailheader {
     display: none;
 }
 
- /* убирать кабинет */
+ /* СѓР±РёСЂР°С‚СЊ РєР°Р±РёРЅРµС‚ */
  #headerfixed > div > div > div.inner-table-block.nopadding.small-block {
     display: none;
 }
@@ -300,30 +300,30 @@ div#mymailheader {
     display: none;
 }
 
- /* Убрать фильтр */
+ /* РЈР±СЂР°С‚СЊ С„РёР»СЊС‚СЂ */
  
 #content > div.wrapper_inner > div > div > div > div > div.top-content-block > div > div:nth-child(2) {
     display: none;
 } 
  
- /* Повыше список товаров к шапке  */
+ /* РџРѕРІС‹С€Рµ СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ Рє С€Р°РїРєРµ  */
  
  .page-top>div:last-of-type {
     padding: 15px 0 10px;
 }
 
-/* Убрать сортировку */
+/* РЈР±СЂР°С‚СЊ СЃРѕСЂС‚РёСЂРѕРІРєСѓ */
 
 #right_block_ajax > div.filter-panel-wrapper.filter_exists {
     display: none;
 }
 
-/* Убрать соцсети */
+/* РЈР±СЂР°С‚СЊ СЃРѕС†СЃРµС‚Рё */
 #content > div.top-block-wrapper > section > div.topic > div > div.share.hover-block.top {
     display: none;
 }
 
-/* Расстояние между разделами и товарами */
+/* Р Р°СЃСЃС‚РѕСЏРЅРёРµ РјРµР¶РґСѓ СЂР°Р·РґРµР»Р°РјРё Рё С‚РѕРІР°СЂР°РјРё */
 .top-content-block>div {
     padding-bottom: 9px;
 }
@@ -369,20 +369,20 @@ span.btn-lg.to-order.btn.btn-default.animate-load.has-ripple {
 }
 
 	  
-	  /* Самовывоз */
+	  /* РЎР°РјРѕРІС‹РІРѕР· */
 	  
 	  #bx_117848907_755 > div.right_info > div > div > div.adaptive-block > div:nth-child(6) {
     display: none;
 }
 
-/* Хочу в подарок	   */
+/* РҐРѕС‡Сѓ РІ РїРѕРґР°СЂРѕРє	   */
 
 #bx_117848907_755 > div.right_info > div > div > div.adaptive-block > div.text-form.muted.ncolor {
     display: none;
 }
 
 
-/* Нашли дешевле	   */
+/* РќР°С€Р»Рё РґРµС€РµРІР»Рµ	   */
 	  
 	 #bx_117848907_755 > div.right_info > div > div > div.adaptive-block > div.quantity_block_wrapper > div.cheaper_form.muted777.font_xs {
     display: none;
@@ -392,8 +392,8 @@ span.btn-lg.to-order.btn.btn-default.animate-load.has-ripple {
     display: none;
 }
 
- /* убирать кабинет */
- /* убирать кабинет */
+ /* СѓР±РёСЂР°С‚СЊ РєР°Р±РёРЅРµС‚ */
+ /* СѓР±РёСЂР°С‚СЊ РєР°Р±РёРЅРµС‚ */
 
 #mobileheader > div.mobileheader-v1 > div.right-icons.pull-right > div:nth-child(2) {
     display: none;
@@ -401,19 +401,19 @@ span.btn-lg.to-order.btn.btn-default.animate-load.has-ripple {
 
 
 
-/* Убрать теги */
+/* РЈР±СЂР°С‚СЊ С‚РµРіРё */
 
 #content > div.wrapper_inner > div > div > div > div > div.top-content-block > div.landings-list.landings_list.with-normal {
     display: none;
 }
 
 
-/* Убрать фильтр */
+/* РЈР±СЂР°С‚СЊ С„РёР»СЊС‚СЂ */
 #right_block_ajax > div.filter-panel-wrapper.filter_exists {
     display: none;
 }
 
-/* Убрать соцсети */
+/* РЈР±СЂР°С‚СЊ СЃРѕС†СЃРµС‚Рё */
 
 
 
@@ -425,7 +425,7 @@ span.btn-lg.to-order.btn.btn-default.animate-load.has-ripple {
     display: none;
 }
 
-/* Вставка почты */
+/* Р’СЃС‚Р°РІРєР° РїРѕС‡С‚С‹ */
 
 div#mobmile {
     margin-bottom: 50px;
@@ -542,7 +542,7 @@ span.breadcrumbs__separator {
 }
 
 }
-/* Конец мобильн8ых стилей */
+/* РљРѕРЅРµС† РјРѕР±РёР»СЊРЅ8С‹С… СЃС‚РёР»РµР№ */
 
 h1 {
     font-size: 1.5em;
