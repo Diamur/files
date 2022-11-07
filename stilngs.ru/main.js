@@ -1,8 +1,9 @@
+// РєРѕРјРјРµРЅС‚Р°СЂРёРё
 var el ; 
- window.addEventListener('load', function(){ // после загрузки страницы
-	 console.log("load Страница загрузилась"); 
+ window.addEventListener('load', function(){ // РїРѕСЃР»Рµ Р·Р°РіСЂСѓР·РєРё СЃС‚СЂР°РЅРёС†С‹
+	 console.log("load РЎС‚СЂР°РЅРёС†Р° Р·Р°РіСЂСѓР·РёР»Р°СЃСЊ"); 
 
-// функции
+// С„СѓРЅРєС†РёРё
 
 function ShowMessage(bool){
        document.querySelector("#copy_message").style.opacity = bool-0;
@@ -16,15 +17,15 @@ function copyText(data) {
             navigator.clipboard.writeText (data);
         }
 
-// Вставка сообщения
+// Р’СЃС‚Р°РІРєР° СЃРѕРѕР±С‰РµРЅРёСЏ
 var parent = document.body;
 var div = document.createElement('div'); 
 div.id = 'copy_message';
-div.innerText = 'Почта скопирована';
+div.innerText = 'РџРѕС‡С‚Р° СЃРєРѕРїРёСЂРѕРІР°РЅР°';
 parent.prepend(div);
 
 
-// вставка почту в шапку
+// РІСЃС‚Р°РІРєР° РїРѕС‡С‚Сѓ РІ С€Р°РїРєСѓ
  var pheader = document.querySelector("#header > div.header-wrapper.fix-logo.header-v28 > div > div > div > div.row > div > div > div > div.subbottom > div.right-icons.pull-right.top-block-item.logo_and_menu-row");
  
 if( pheader != null){
@@ -38,7 +39,7 @@ pheader.append(div);
 }
 
 
-// вставка почту на конечник
+// РІСЃС‚Р°РІРєР° РїРѕС‡С‚Сѓ РЅР° РєРѕРЅРµС‡РЅРёРє
 // var parent = document.querySelector("div.catalog-element-purchase");
 var parent  = document.querySelector('#content  div.js-prices-in-side.product-action .more_text');
 
@@ -51,8 +52,8 @@ if( window.location.href.indexOf('/catalog/') != -1)
 	div.innerHTML = `<div class="catalog-element-purchase-order-buttons mail" id="mymail1">
 	<div class="intec-grid-item-2 intec-grid-item-400-1"> 
 					<div class="catalog-element-property"> 
-						<div class="catalog-element-property-name" id="mymailtext">Для быстрого получения цены 
-	отправьте заявку на почту</div> 
+						<div class="catalog-element-property-name" id="mymailtext">Р”Р»СЏ Р±С‹СЃС‚СЂРѕРіРѕ РїРѕР»СѓС‡РµРЅРёСЏ С†РµРЅС‹ 
+	РѕС‚РїСЂР°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ РЅР° РїРѕС‡С‚Сѓ</div> 
 						 
 					</div> 
 				</div>
@@ -68,7 +69,7 @@ if( window.location.href.indexOf('/catalog/') != -1)
     parent.append(div);
 };
 
-// вставка почту на мобилку на КОНЕЧКУ
+// РІСЃС‚Р°РІРєР° РїРѕС‡С‚Сѓ РЅР° РјРѕР±РёР»РєСѓ РЅР° РљРћРќР•Р§РљРЈ
 // var parent = document.querySelector("div.catalog-element-purchase");
 var parent  = document.querySelector("#content div.product-view.product-view--side-left  div.adaptive-block > div.js-prices-in-item > div");
 
@@ -78,13 +79,13 @@ if( window.location.href.indexOf('/catalog/') != -1)
 	// var parent = document.querySelector("div.catalog-element-purchase");
 	div.className = 'mobmile';
 	div.id = 'mobmile';
-	div.innerHTML = `<div class="mobmile" id="mobmile2"><div class="mobmile" id="mobmile3"><div class="mobmile" id="mobmile5">Для быстрого получения цены<br>отправьте заявку на почту</div></div></div><div class="mobmile" id="mobmile4"><div class="mobmile" id="mobmile6"><img id="mobmile7" src="/upload/img/mail.png"><span class="mobmile" id="mymail6">info@kabel-kit.ru</span></div></div>`;
+	div.innerHTML = `<div class="mobmile" id="mobmile2"><div class="mobmile" id="mobmile3"><div class="mobmile" id="mobmile5">Р”Р»СЏ Р±С‹СЃС‚СЂРѕРіРѕ РїРѕР»СѓС‡РµРЅРёСЏ С†РµРЅС‹<br>РѕС‚РїСЂР°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ РЅР° РїРѕС‡С‚Сѓ</div></div></div><div class="mobmile" id="mobmile4"><div class="mobmile" id="mobmile6"><img id="mobmile7" src="/upload/img/mail.png"><span class="mobmile" id="mymail6">info@kabel-kit.ru</span></div></div>`;
 
     // parent.append(div);
     parent.append(div);
 };
 
-// вставка почту на мобилку В ШАПКУ
+// РІСЃС‚Р°РІРєР° РїРѕС‡С‚Сѓ РЅР° РјРѕР±РёР»РєСѓ Р’ РЁРђРџРљРЈ
 // var parent = document.querySelector("div.catalog-element-purchase");
 var parent  = document.querySelector("#mobileheader > div.mobileheader-v1 > div.right-icons.pull-right");
   if( parent != null ){
@@ -101,10 +102,10 @@ var parent  = document.querySelector("#mobileheader > div.mobileheader-v1 > div.
 
 
 
-// Добавляем событие клик по почте на десктопе
+// Р”РѕР±Р°РІР»СЏРµРј СЃРѕР±С‹С‚РёРµ РєР»РёРє РїРѕ РїРѕС‡С‚Рµ РЅР° РґРµСЃРєС‚РѕРїРµ
 if( document.querySelector("#mymail2") != null)
 	document.querySelector("#mymail2").addEventListener('click',(e)=>{
-				console.log('mail cкопирован...');
+				console.log('mail cРєРѕРїРёСЂРѕРІР°РЅ...');
 
 		 var rect = e.target.getBoundingClientRect();
 		  var x0 = rect.left; //x position within the element.
@@ -123,10 +124,10 @@ if( document.querySelector("#mymail2") != null)
 	   el = e;
 	})
 
-// Добавляем событие клик по почте на мобилке
+// Р”РѕР±Р°РІР»СЏРµРј СЃРѕР±С‹С‚РёРµ РєР»РёРє РїРѕ РїРѕС‡С‚Рµ РЅР° РјРѕР±РёР»РєРµ
 if( document.querySelector("#mobmile4") != null)
 	document.querySelector("#mobmile4").addEventListener('click',(e)=>{
-				console.log('mail cкопирован...');
+				console.log('mail cРєРѕРїРёСЂРѕРІР°РЅ...');
 
 		 var rect = e.target.getBoundingClientRect();
 		  var x0 = rect.left; //x position within the element.
@@ -145,10 +146,10 @@ if( document.querySelector("#mobmile4") != null)
 	   el = e;
 	})
 
-// Добавляем событие клик по почте на мобилке В ШАПКЕ
+// Р”РѕР±Р°РІР»СЏРµРј СЃРѕР±С‹С‚РёРµ РєР»РёРє РїРѕ РїРѕС‡С‚Рµ РЅР° РјРѕР±РёР»РєРµ Р’ РЁРђРџРљР•
 if( document.querySelector("#hmobmile0") != null)
 	document.querySelector("#hmobmile0").addEventListener('click',(e)=>{
-				console.log('mail cкопирован...');
+				console.log('mail cРєРѕРїРёСЂРѕРІР°РЅ...');
 
 		 var rect = e.target.getBoundingClientRect();
 		  var x0 = rect.left; //x position within the element.
