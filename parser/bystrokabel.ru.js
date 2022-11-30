@@ -5,6 +5,7 @@ var detailText = '';
 var elementProperties = '';
 var result = '';
 var secCount = 0;
+var stop = false;
  
 function getUrls(){
 var s='';
@@ -109,6 +110,7 @@ function copyText(data) {
             navigator.clipboard.writeText (data);
         }
 async function processArray(array,sek, _num = 0) {
+ stop = false;   
  detailText = '';
  result = '';
  var res = '';
@@ -119,15 +121,23 @@ async function processArray(array,sek, _num = 0) {
       if ( num < _num ) continue;  
       if ( item != "" )
      var res = await delayedLog(item, sek);
-      if (res == -1) break;           
+      if (res == -1) break;
+      if(stop) break;
   }
   console.log('Done!');
-  console.log(result);
-    if (res == -1) 
-        console.log('processArray(getUrls(),1,' + secCount + ')');
+  console.log(result); 
     copyText(result);
-    alert("Результат скопирован...строк = > " + (num -_num ), );
-    
+       if(stop){
+            alert("ПАРСИНГ ОСТАНОВЛЕН! \nВсего ссылок на странице - "+getUrls().length+" \nCкопировано строк в БУФЕР ОБМЕНА - " + (num -_num ) + "  \n----------\n1. Сначала кликаем здесь ОК. \n2. Если надо, то ВСТАВЛЯЕМ строки в таблицу. . \n3. Затем по новой запускаем последную команду в Console", );
+            console.log('processArray(getUrls(),1,' + secCount + ')');
+       }
+       else if (res == -1) {
+        console.log('processArray(getUrls(),1,' + secCount + ')');
+           alert("НЕ ВСЕ ССЫЛКИ ОБРАБОТАНЫ! \nВсего ссылок на странице - "+getUrls().length+" \nCкопировано строк в БУФЕР ОБМЕНА - " + (num -_num ) + "  \n----------\n1. Сначала Меняем IP \n2. Потом кликаем здесь ОК. \n3. Потом ВСТАВЛЯЕМ строки в таблицу. .\n4. Парсинг продолжиться с того места где закончился", );
+           processArray(getUrls(),1, secCount );
+       }else{
+            alert("ВСЕ ССЫЛКИ ОБРАБОТАНЫ! \nВсего ссылок на странице - "+getUrls().length+" \nCкопировано строк в БУФЕР ОБМЕНА - " + (num -_num ) + "  \n----------\n1 Сначала кликаем здесь ОК. \n2. Потом ВСТАВЛЯЕМ строки в таблицу. . \n3. Затем кликаем следующую страницу \n4. Затем по новой вставляем код в Console", );
+       }
 }
 //-----------------------------------------------------------------
 processArray(getUrls(),1,0)
